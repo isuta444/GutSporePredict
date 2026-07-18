@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Large biological data
+database/*
+!database/.gitkeep
+
+input/*
+!input/.gitkeep
+
+results/*
+!results/.gitkeep
+
+# Generated metadata
+metadata/*.tsv
+metadata/*.json
+metadata/accessions/*.txt
+
+# Temporary
+tmp/
+temp/
+
+# NCBI packages
+**/package/
+**/ncbi_dataset/
+*.zip

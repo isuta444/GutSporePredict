@@ -1,0 +1,37 @@
+{
+  "gtdb_release": "latest",
+  "target_families": [
+    "Lachnospiraceae",
+    "Oscillospiraceae",
+    "Clostridiaceae",
+    "Acutalibacteraceae",
+    "Peptostreptococcaceae",
+    "Erysipelotrichaceae"
+  ],
+  "quality_thresholds": {
+    "minimum_completeness": 90.0,
+    "maximum_contamination": 5.0,
+    "strict_minimum_completeness": 95.0,
+    "strict_maximum_contamination": 3.0
+  },
+  "selection": {
+    "representatives_only_for_primary_set": true,
+    "retain_non_representatives_in_master_table": true,
+    "prefer_checkm2": true
+  },
+  "human_gut_keywords": [
+    "human",
+    "homo sapiens",
+    "feces",
+    "faeces",
+    "fecal",
+    "faecal",
+    "stool",
+    "gut",
+    "intestinal",
+    "intestine",
+    "colon",
+    "colonic",
+    "gastrointestinal"
+  ]
+}
