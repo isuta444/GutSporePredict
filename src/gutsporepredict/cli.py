@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import argparse
 from collections.abc import Sequence
+from pathlib import Path
 
 from gutsporepredict import __version__
+from gutsporepredict.io import GenomeLoader
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -34,6 +36,18 @@ def build_parser() -> argparse.ArgumentParser:
         help="Check the GutSporePredict execution environment.",
     )
 
+    run_parser = subparsers.add_parser(
+        "run",
+        help="Load genome FASTA files and start the analysis pipeline.",
+    )
+
+    run_parser.add_argument(
+        "--genomes",
+        type=Path,
+        required=True,
+        help="Directory containing genome FASTA files.",
+    )
+
     return parser
 
 
@@ -45,6 +59,22 @@ def run_doctor() -> int:
     return 0
 
 
+def run_pipeline(genome_dir: Path) -> int:
+    """Load genomes and run the initial pipeline step."""
+    print(f"Loading genomes from: {genome_dir}")
+
+    loader = GenomeLoader(genome_dir)
+    genomes = loader.load()
+
+    print(f"Loaded {len(genomes)} genome(s)")
+
+    for genome in genomes:
+        print(f"- {genome.accession}")
+
+    print("Done.")
+    return 0
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     """Run the GutSporePredict command-line interface."""
     parser = build_parser()
@@ -52,6 +82,9 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     if args.command == "doctor":
         return run_doctor()
+
+    if args.command == "run":
+        return run_pipeline(args.genomes)
 
     parser.print_help()
     return 0
