@@ -8,6 +8,7 @@ from pathlib import Path
 
 from gutsporepredict import __version__
 from gutsporepredict.io import GenomeLoader
+from gutsporepredict.validation import InputValidator
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -63,6 +64,8 @@ def run_pipeline(genome_dir: Path) -> int:
     """Load genomes and run the initial pipeline step."""
     print(f"Loading genomes from: {genome_dir}")
 
+    InputValidator.validate_genome_directory(genome_dir)
+
     loader = GenomeLoader(genome_dir)
     genomes = loader.load()
 
@@ -84,7 +87,11 @@ def main(argv: Sequence[str] | None = None) -> int:
         return run_doctor()
 
     if args.command == "run":
-        return run_pipeline(args.genomes)
+        try:
+            return run_pipeline(args.genomes)
+        except (FileNotFoundError, NotADirectoryError) as e:
+            print(f"ERROR: {e}")
+            return 1
 
     parser.print_help()
     return 0
