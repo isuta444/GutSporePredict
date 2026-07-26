@@ -19,3 +19,20 @@ class InputValidator:
             raise NotADirectoryError(
                 f"Not a directory: {genome_dir}"
             )
+
+    @staticmethod
+    def validate_fasta_files(genome_dir: Path) -> None:
+        """Validate that the directory contains FASTA files."""
+
+        fasta_extensions = {".fa", ".fasta", ".fna"}
+
+        fasta_files = [
+            path
+            for path in genome_dir.iterdir()
+            if path.is_file() and path.suffix.lower() in fasta_extensions
+        ]
+
+        if not fasta_files:
+            raise FileNotFoundError(
+                f"No FASTA files found in directory: {genome_dir}"
+            )

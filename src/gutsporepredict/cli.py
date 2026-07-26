@@ -65,6 +65,7 @@ def run_pipeline(genome_dir: Path) -> int:
     print(f"Loading genomes from: {genome_dir}")
 
     InputValidator.validate_genome_directory(genome_dir)
+    InputValidator.validate_fasta_files(genome_dir)
 
     loader = GenomeLoader(genome_dir)
     genomes = loader.load()
