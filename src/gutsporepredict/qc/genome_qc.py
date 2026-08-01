@@ -80,4 +80,3 @@ class GenomeQC:
                 return length
 
         return 0
-        

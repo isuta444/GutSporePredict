@@ -1,0 +1,5 @@
+parameter	value
+hmm_evalue	1e-5
+hmm_domain_evalue	1e-4
+minimum_profile_sequences	3
+minimum_hmm_coverage	0.45

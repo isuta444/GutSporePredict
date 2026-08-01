@@ -1,6 +1,6 @@
 """Models for the GutSporePredict reference database."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass(frozen=True)
@@ -33,34 +33,61 @@ class ReferenceDatabase:
     genes: tuple[ReferenceGene, ...]
     aliases: tuple[GeneAlias, ...]
 
-    def gene_by_id(self, gene_id: str) -> ReferenceGene | None:
-        """Return a reference gene by its stable identifier."""
+    _gene_index: dict[str, ReferenceGene] = field(
+        init=False,
+        repr=False,
+    )
+    _name_index: dict[str, ReferenceGene] = field(
+        init=False,
+        repr=False,
+    )
 
-        return next(
-            (
-                gene
-                for gene in self.genes
-                if gene.gene_id == gene_id
-            ),
-            None,
-        )
+    def __post_init__(self) -> None:
+        """Build lookup indexes."""
 
-    def resolve_name(self, name: str) -> ReferenceGene | None:
-        """Resolve a canonical name or alias to a reference gene."""
-
-        normalized_name = name.strip().lower()
-
-        for gene in self.genes:
-            if gene.canonical_name.lower() == normalized_name:
-                return gene
-
-        alias_gene_ids = {
-            alias.gene_id
-            for alias in self.aliases
-            if alias.alias.lower() == normalized_name
+        gene_index = {
+            gene.gene_id: gene
+            for gene in self.genes
         }
 
-        if len(alias_gene_ids) != 1:
-            return None
+        name_index = {
+            gene.canonical_name.lower(): gene
+            for gene in self.genes
+        }
 
-        return self.gene_by_id(next(iter(alias_gene_ids)))
+        for alias in self.aliases:
+            gene = gene_index.get(alias.gene_id)
+            if gene is not None:
+                name_index.setdefault(
+                    alias.alias.lower(),
+                    gene,
+                )
+
+        object.__setattr__(
+            self,
+            "_gene_index",
+            gene_index,
+        )
+        object.__setattr__(
+            self,
+            "_name_index",
+            name_index,
+        )
+
+    def gene_by_id(
+        self,
+        gene_id: str,
+    ) -> ReferenceGene | None:
+        """Return a reference gene by its stable identifier."""
+
+        return self._gene_index.get(gene_id)
+
+    def resolve_name(
+        self,
+        name: str,
+    ) -> ReferenceGene | None:
+        """Resolve a canonical name or alias."""
+
+        return self._name_index.get(
+            name.strip().lower()
+        )
