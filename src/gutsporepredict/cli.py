@@ -14,6 +14,24 @@ from gutsporepredict.pipeline import (
 )
 
 
+def detect_project_root() -> Path:
+    """Locate the GutSporePredict source repository."""
+
+    candidate = Path(__file__).resolve().parents[2]
+
+    required = [
+        candidate / "scripts",
+        candidate / "knowledge",
+        candidate / "config",
+        candidate / "database",
+    ]
+
+    if all(path.exists() for path in required):
+        return candidate
+
+    return Path.cwd()
+
+
 def build_parser() -> argparse.ArgumentParser:
     """Create the top-level command-line parser."""
 
@@ -64,11 +82,11 @@ def build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument(
         "--project-root",
         type=Path,
-        default=Path.cwd(),
+        default=detect_project_root(),
         help=(
             "GutSporePredict repository root containing scripts, "
             "knowledge, config and database directories. "
-            "Default: current directory."
+            "Default: automatically detected installation source."
         ),
     )
     run_parser.add_argument(
