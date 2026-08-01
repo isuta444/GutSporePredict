@@ -51,3 +51,13 @@ temp/
 **/package/
 **/ncbi_dataset/
 *.zip
+database/*
+!database/.gitkeep
+
+# GutSporePredict reference database (required)
+!database/gutspore/
+!database/gutspore/reference_v3/
+!database/gutspore/reference_v3/spore_reference.faa
+!database/gutspore/reference_v3/hmm/
+!database/gutspore/reference_v3/hmm/**
+

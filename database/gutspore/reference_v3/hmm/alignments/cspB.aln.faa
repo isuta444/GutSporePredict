@@ -1,0 +1,80 @@
+>REF|cspB|P32081 Cold shock protein CspB [Bacillus subtilis (strain 168)]
+MLEGK--------VKWFNSEKGF----------GF-----IEVEGQDDVFVHFSA-----
+--------------------------------------------------IQGEGFKTLE
+EGQAVSFEIVEGNRGPQ--AANVTKE-----------A
+>REF|cspB|P41018 Cold shock protein CspB [Sporosarcina globispora]
+-------------IKWFNSEKGF----------GF-----IEVEGQDDVFVHFSA-----
+--------------------------------------------------IQGEGFKCLE
+EGQAVSFEIVEGNRGPQ--AAN----------------
+>REF|cspB|P41016 Cold shock protein CspB [Bacillus caldolyticus]
+MQRGK--------VKWFNNEKGY----------GF-----IEVEGGSDVFVHFTA-----
+--------------------------------------------------IQGEGFKTLE
+EGQEVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|P42016 Cold shock protein CspB [Geobacillus stearothermophilus]
+MQRGK--------VKWFNNEKGY----------GF-----IEVEGGSDVFVHFTA-----
+--------------------------------------------------IQGEGFKSLE
+EGQEVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|Q45097 Cold shock-like protein CspB [Bacillus cereus]
+-MNGK--------VKWFNNEKGF----------GF-----IEMEGSEDVFVHFSA-----
+--------------------------------------------------IQSDGYKALE
+EGQEVSFDITEGNRGPQ--AANVAKL------------
+>REF|cspB|P0A357 Cold shock-like protein CspLB [Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e)]
+MQTGT--------VKWFNSEKGF----------GF-----IEVEGGDDVFVHFSA-----
+--------------------------------------------------IEGEGFKTLD
+EGQSVEFEIVEGQRGPQ--AEKVTKL------------
+>REF|cspB|P0A358 Cold shock-like protein CspLB [Listeria innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262)]
+MQTGT--------VKWFNSEKGF----------GF-----IEVEGGDDVFVHFSA-----
+--------------------------------------------------IEGEGFKTLD
+EGQSVEFEIVEGQRGPQ--AEKVTKL------------
+>REF|cspB|A0A160F3L2 Cold shock protein CspB [Anoxybacteroides amylolyticum]
+MQNGK--------VKWFNNEKGY----------GF-----IEVEGGADVFVHFTA-----
+--------------------------------------------------IQGEGYKTLE
+EGQEVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|A0A1Q5SY33 Cold shock protein CspB [Geobacillus proteiniphilus]
+MQRGK--------VKWFNNEKGY----------GF-----IEVEGGSDVFVHFTA-----
+--------------------------------------------------IQGEGFKTLE
+EGQEVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|A0AAW7TEA5 Cold shock protein CspB [Anoxybacillus gonensis]
+MQNGK--------VKWFNNEKGY----------GF-----IEVEGGDDVFVHFTA-----
+--------------------------------------------------IQGEGYKTLE
+EGQAVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|A0A143MJ82 Cold shock protein CspB [Geobacillus subterraneus]
+MQRGK--------VKWFNNEKGY----------GF-----IEVEGGSDVFVHFTA-----
+--------------------------------------------------IQGEGFKTLE
+EGQEVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|A0ABD5J0T0 Cold shock protein CspB [Anoxybacteroides rupiense]
+MQNGK--------VKWFNNEKGY----------GF-----IEVEGGADVFVHFTA-----
+--------------------------------------------------IQGDGYKTLE
+EGQEVSFEIVQGNRGPQ--AANVVKL------------
+>REF|cspB|A0A161HUB8 Cold shock protein CspB [Anoxybacteroides amylolyticum]
+MNTGT--------VKWFNAEKGF----------GF-----IATEGGNDVFVHFTA-----
+--------------------------------------------------IQGDGFKTLE
+EGQKVTFDIINGNRGPQ--AANVRKG------------
+>REF|cspB|Q6UVK6 protein-tyrosine-phosphatase [Streptococcus pneumoniae]
+LLAESYRQGVRTIVSTSHRRKGMFETPEEKIAENFLQIREIAKEVASDLVIAYGAEIYYT
+PDVLDKLEKKRIPTLNDSRYALIEFSMNTPYRDIHSALSKILMLGITPVIAHIERYDALE
+NNEKRVRELIDMGCYTQVNSSHVLKPKLFGERYKFMKK
+>REF|cspB|Q6UVL1 protein-tyrosine-phosphatase [Streptococcus pneumoniae]
+LLIESYRQGVRTIVSTSHRRKGMFETPEEKIAENFLQVREIAKEVADDLVIAYGAEIYYT
+LDALEKLEKKEIPTLNDSRYALIEFSMHTSYRQIHTGLSNILMLGITPVIAHIERYDALE
+NNEKRVRELIDMGCYTQINSYHVSKPKFFGEKYKFMKK
+>REF|cspB|Q6UVL6 protein-tyrosine-phosphatase [Streptococcus pneumoniae]
+LLIESYRQGVRTIVSTSHRRKGMFETPEEKIAENFLQVREIAKEVADDLVIAYGAEIYYT
+LDALEKLEKKEIPTLNDSRYALIEFSMHTSYRQIHTGLSNILMLGITPVIAHIERYDALE
+NNEKHVRELIDMGCYTQINSYHVSKPKFFGEKYKFMKK
+>REF|cspB|Q6UVL7 protein-tyrosine-phosphatase [Streptococcus pneumoniae]
+LLTESYRQGVRTIVSTSHRRKGMFETPEEKIAENFLQVREIAKEVADDLVIAYGAEIYYT
+LDALEKLEKKEIPTLNDSRYALIEFSMNTPYRDIHSALSKILMLGITPVIAHIERYDALE
+NNEKRVRELIDMGCYTQVNSSHVLKPKLFGERYKFMKK
+>REF|cspB|O33591 Cold shock protein CspA [Staphylococcus aureus]
+MNNGT--------VKWFNAEKGF----------GF-----IEQENGGDVFVHFSG-----
+--------------------------------------------------IASDGYKTLE
+EGQKVTFEITEGQRGDQ--AVNVQTV------------
+>REF|cspB|Q6UVL3 protein-tyrosine-phosphatase [Streptococcus pneumoniae]
+LLTEAYRQGVRTIVSTSHRRKGMFETPEEKIAENFLQVREIAKEVASDLVIAYGAEIYYT
+PDVLDKLENNRIPTLNNSRYALIEFSMNTPYRDIHSALNKILMLGITPVIAHIERYDVLE
+NNEKRVRELIDMGCYTQINSSHVLKSKLFGEPYKFMKK
+>REF|cspB|Q6UVL4 protein-tyrosine-phosphatase [Streptococcus pneumoniae]
+LLAESYRQGVRTIVSTSHRRKGMFETPEEKIAENFLQVREIAKEVASDLVIAYGAEIYYT
+SDVLDKLEKNRIPTLNNSRYALIEFSMNTPYRDIHSALSKILMLGITPVIAHIERYDALE
+NNEKRVRELINMGCYTQVNSSHVLKSKLFGERYKFMKK

@@ -1,0 +1,180 @@
+>REF|divIVA|P71021 Septum site-determining protein DivIVA [Bacillus subtilis (strain 168)]
+M-PLTPNDIHNKTFTKS-FRGYDEDEVNEFLAQVRKDYEIVLRK----------------
+-----KTELEAKVNELDERIGH--------------------------------------
+--------FANIEETLNKSILVAQEAAEDVKRNSQKEAKLIVREAEKNADRII-------
+---------------NESLSKSRKIAMEIEELKK-----------QSKVFRTRFQMLIEA
+QLDLLKNDDWDHLLEYEVDAV----------------FEEK-------------------
+------------------------------------------------------------
+------------------------------------------------------------
+--------------------------------------------------------E
+>REF|divIVA|Q8CWP9 Cell division protein DivIVA [Streptococcus pneumoniae (strain ATCC BAA-255 / R6)]
+M-PITSLEIKDKTFGTR-FRGFDPEEVDEFLDIVVRDYEDLVRA----------------
+-----NHDKNLRIKSLEERLSY--------------------------------------
+--------FDEIKDSLSQSVLIAQDTAERVKQAAHERSNNIIHQAEQDAQRLLEEAKY--
+---------KANEILRQATDNAKKVAVETEELKN-----------KSRVFHQRLKSTIES
+QLAIVESSDWEDILRPTATYL---QTSDEA-------FKEVVS------EVL-GEPIPAP
+I-------EEEPIDMTRQFSQAEMEELQARIEVADKELSEFEAQIKQEVETPT-------
+------PVVSPQVEEEP----------------LLIQLAQCMK-----------------
+-------NQK-----------------------------------------------
+>REF|divIVA|Q53622  [Staphylococcus aureus]
+M-PFTPNEIKNKEFSRV-KNGLEPTEVANFLEQLSTEIERLKED----------------
+-----KKQLEKVIEERDTNIKS--------------------------------------
+--------YQDVHQSVSDALIQAQKAGEETKQAAEKQAEAIIAKAEAQANQMV-------
+---------------GDAVEKARRLAFQTEDMKR-----------QSKVFRSRFRMLVEA
+QLDLLKNEDWDYLLNYDLDAE---QVTLEN-------IHHLHE------NDLKP------
+--------DEVAANAQNNASN--------TSDNNQ-------------------------
+------QSNDSETTKK--------------------------------------------
+---------------------------------------------------------
+>REF|divIVA|A0A1J0A4K3 Cell division protein DivIVA [Vagococcus teuberi]
+M-GIKPIDITNKSFNTK-FKGYDRDEVDDFLDQIALEVEKLTQE----------------
+-----NRSLEKEVKQANDKLSY--------------------------------------
+--------FNELKDSLNQSIIVAQDTADKLKENAIRESDLAIQQSQAQSEDILAHANKMS
+DELITGATNKANQILSEASERARQLAVETDDLKK-----------KTRIFHRNLNVLLES
+QLQIVQSDEWDEILKPFGAYV---DSSHQA-------FKQVLD------AVEAANGVDP-
+--------TSPAVNTKPALDNV--------------PKNREAIKQPEIK-----------
+------VSTTRENTNKP--------------------ADKPVEK----------------
+------NDETKKLNKVE--------RATRPRV------------------------K
+>REF|divIVA|A0A1Z2XPI0 DivIVA domain-containing protein [Acutalibacter muris]
+M--LTVKEINEVSFGKAGFSGYKPEDVDNFIDMVAASFQELLAERDAAVKQAGELAALNT
+ELAARNSDAQRKLSVLAQKIET--------------------------------------
+--------YRTDEEGIKEAIISAQRMSKAMVKEAEEKAAGIVSDARAQAEAKLLEANEEA
+RKITQNAESDAAKAAKEYSQMADTKKTELEEIKK-----------QVTAFRSSLLEMYKK
+HLECIDHIP---------TFR---QKDEPE-----------PE------KPAAVPQPEPV
+AIR-----EPEPIKTAEPLYELPPEEPVVEAEAETIAEPAPEPRPEPEPRHMLPVQEYRE
+QPAPRQPQPPRTVRERPAPQPSRG----APREGTGRQEQSQIRTLNDTYNYVQEQLQPSR
+LPESYLEDNDLSSVGIDLNAHSNIPEALRREKSTNY---SNLPFGDGIDVDGRKRRR
+>REF|divIVA|A0A224XBK6 Cell division protein DivIVA [Pseudolactococcus reticulitermitis]
+M-TLNSLDVQNKTFPTK-MRGYNKADVDDFLDLVIRDYDTFAEK----------------
+-----MKDQERELKSLRERVEY--------------------------------------
+--------FEGMKESLNKSIVVAQSAADNLKEQAINEANGVTSEAGQKAQYILESAKK--
+---------EAGGILNSASDDARRLVKETDELKR-----------KMRIYHQRMTLMVEA
+QLEGIKSHEWEEILKPTSTYI---GDGEEK-------LKEIIE------THEGNTVQI--
+--------SHTVNQVSEILDN---------------EETVATPEITEPNESVA-------
+------SVTSTEPTET---------------------EQDTTNS----------------
+------E-------------------------------------------------I
+>REF|divIVA|A0AAI9NXF2 DivIVA domain-containing protein [Coprococcus eutactus]
+M--LTPVDLQQKKFTHG-M-GYARKDVDAFFDIVVLSYTELYKS----------------
+-----NADLTNQVKTLTDSLVH--------------------------------------
+--------YRTTESKLQKSLMLAEKNAEESTKNATDKARLIENDAKIKANNIV-------
+---------------QEAREELERIEGSIDGIKQ-----------QYKDYVCAFKALMEA
+HMNYLAQNPINEEMGLNFDDVLSEGSSNAS-------YSQSTQ------SAAMNSFMNSY
+DGD---------------------------------------------------------
+------PQGREESTLGSGGGSAMGDSTLGGAGGGSVTSDSSVYT----------------
+-------------------------KNLGGKSFVN-------PFG-----------N
+>REF|divIVA|A0AAP5TER3 Cell division protein DivIVA [Pediococcus parvulus]
+M-SLDPVDIQNKQFSNK-MRGYNPNEVDEFLQQVAIEYRRALDK----------------
+-----ISSLQKEVENAETKIEY--------------------------------------
+--------FDDMKEALNKSILVAQDAADKVKSSSKREAELTAEEAQKQADGMVQKARV--
+---------SAEAVIDEQAEKAKRLILATNELRK-----------NARLYRQRVQVLVDS
+QLQMINGSEWDSILKEDQDVQ---VSDLKDAMLHTGTLDKIKESRVNSVDEEDARDITPA
+VEPEKKD-DEFLQGKEKPAEN--------STETSVKQDGDSHNEDEDDSKNTAP------
+ETVVVFPNDKSDSEGH---------------------ENSGLHV----------------
+-------NAKN---------------------------------------------E
+>REF|divIVA|A0A429ZWB8 Cell division protein DivIVA [Vagococcus vulneris]
+M-GLKPIDITNKSFSSK-FKGYDRDEVDDFLDQLAVDFEKLIQE----------------
+-----NRDLDKEVKQVTEKLSY--------------------------------------
+--------FSELKDSLNQSIIVAQDTADKLKENATKESDLAVQQAQAQAEDILAHANKMS
+DELITAATNKANAILTDSSERARELAVETDDLKK-----------KTRVFHRNLSVLLES
+QLQIVQSDEWDELLKPFGAYV---DNTHQA-------FKEVLD------AVELSDGTKKP
+G-------SSVAIEVKPNFTNG-------PSESDENSETKAVPKQAPKP-----------
+------KTQSQTSAGK----------------------NGETR-----------------
+-------GNKKPQGRSE--------RSSRGRV-------------------------
+>REF|divIVA|A0A7R7ELU5 DivIVA domain-containing protein [Anaeromicropila herbilytica]
+M--LTPIEIQNRSFKSG-I-GYDKKDVEAFFKDVAKNYEKLYKE----------------
+-----NVELNDKMGVLNEGIQY--------------------------------------
+--------YKSIEKTLQKALVLAERTSDETKETALQKAKAIEQEAQIKAKSML-------
+---------------MEAEKSLDDINLKIIELIR-----------QYDMYKAQFKQLATT
+QIEILNSDSFQLEIANLNTFI---KKSESS-------NGQENS------KSQMVTDDTAL
+EE------NSVQASRDDLLDEVIPKVTHNTTKAHNKNESKS-------------------
+------QDDCFEYIEV---------------------ED---------------------
+---------------------------------------------------------
+>REF|divIVA|A0A8D5UFN2 DivIVA domain-containing protein [Polycladomyces abyssicola]
+M-PLTPYDIHNKEFSRS-FRGYDVDEVNDFLDQIIKDFEFLIRE----------------
+-----KQQLEEQVEELQAELERLMEQQSMSPVQ---APQPQSPQPPQPRY-----QPEPM
+YQQPSAAALTSMEQSIHKSIRVAQEVAEEVRLNAKKEAELIVQEAEKNADRII-------
+---------------NEALQKARAIHSELVGLKQ-----------KATIYRARFRTLVQS
+HLDILENSDWESLEELE-EGL---EETGKQ-------LEQLAQ------PSE--------
+--------PEMDEELDHDFDDYHHD----HHDEYQD------PMDQPEP-----------
+------SYQ----IEE---------------------EDEPRR-----------------
+-------ELRRTS------------RKLKKKAM-----------------------F
+>REF|divIVA|A0A1V4DIK6 Cell division protein DivIVA [Vagococcus martis]
+M-GIKPIDITNKSFNTK-FKGYDRDEVDDFLDQIALEVEKLTQE----------------
+-----NRSLEKEVKQANDKLGY--------------------------------------
+--------FNELKDSLNQSIIVAQDTADKLKENAIRESDLAIQQSQAQSEDILAHANKMS
+DELITGATNKANQILSEASERARQLAVETDDLKK-----------KTRIFHRNLNVLLES
+QLQIVQSDEWDEILKPFGAYV---DSSHQA-------FKQVLD------AVEAANGVDP-
+--------TSPAVNTKPAFDNV--------------PKNKATIKQPEIK-----------
+------VSTTRENTNKP--------------------AEKPAEK----------------
+------NDETKKLNKVE--------RATRPRV------------------------K
+>REF|divIVA|A0A430AYF3 Cell division protein DivIVA [Vagococcus elongatus]
+MAALTPLDIKNKSFSTK-FKGYNPDEVDDFLDQVIDDYEDSVRK----------------
+-----VKELEKNLKHAEEKLTY--------------------------------------
+--------FNELKDALNQSIIVAQDTADKLKNTASKESDVLVSTAQADARAILDEANATA
+EATVADANRISSEILKTAQIQASQLANETDDLKK-----------KTREFHRNLSLILES
+QLEIVKGREWDDLLKPFSTYM---DERHTH-------VRELLE------NEEKMKEELQM
+FET-----TEVEEELGEVAES--------STETTADGHTQAIELDAIEA-----------
+------EENKNEIVEK---------------------NKPKYS-----------------
+-------------------------RVRRSR-------------------------D
+>REF|divIVA|A0A4R5NTJ9 DivIVA domain-containing protein [Secundilactobacillus malefermentans]
+M-VLSPMDIHDKEFSTK-MRGYNIDEVNDFLDKVIKDYQITLKE----------------
+-----NKELTENLDASQEKLKY--------------------------------------
+--------FNDLKDSLNQSIIVAQEAADRVRANSQREAEIITQEAQKQASDIVSEASD--
+---------KANDTLNQAAKRAQQLAVETDDLKK-----------STRVFRQRLQVMLES
+QLEVTKSKDWDDLLQ---EGV---PTSYNE-------IRKLMD------DQLDSSENSGV
+DS------DKASASEGEIIDA-------------------DQPVAAEQNQQTV-------
+---VIFPDDDTQATKD---------------------KDEAIK-----------------
+-------DSNK----------------------------------------------
+>REF|divIVA|A0A8D4UUY9 Cell division protein DivIVA [Dialister hominis]
+M--ITPMDIHNKTFSKQ-IRGYSSEEVNSFLEELAGDYERIYRE----------------
+-----HREMEEEMDAIKTKLRN--------------------------------------
+--------YEKMEETMSSTLVMAQQTAENVKRNANKEAELSIREAQNEARKIV-------
+---------------SDAEAARRKMNADLLKTEG-----------DMNLYIEKLLSNFKS
+ALSLIESAKAAQAPQPIQTAP---KTQEVP-------AAQEAP------AAEAPAEDIPV
+QT------EETAEGAEETAETVETAEAEPFAEAEEEAAADTEEEKEEKGANVF-------
+------DVAAETVKKE---------------------EKK--------------------
+--------------------------------------------------------D
+>REF|divIVA|A0AA37MW22 DivIVA domain-containing protein [Faecalibacterium gallinarum]
+M--LTPQDVHSVQFDKN-LRGYRTEDVDHFLDKIEEQLQQDIQEAEALRK----------
+----RISDLISENQKLARELES--------------------------------------
+--------YQADGEMLKSALINAQRMGENVIREANQKSEEILHRANLRADDII-------
+--------RDANELLQKATERADEIVNEANEQRQAEEREYERVRLEVTRFKADVLNLYRN
+HVASLSRLP---------EYQ---PETPAE-------TQAAPQ------EEAAPEEEQPQ
+L----------------------PAETAETAESEAEAEAAE-------------------
+------PEQAEDFWDK---------------------DESQLK-----------------
+---------------VDLP-----VPAENKPADVDYSVFQGIKFS-----------E
+>REF|divIVA|A0ABQ1G051 DivIVA domain-containing protein [Kroppenstedtia guangzhouensis]
+M-PLSPLDIHNKEFKRS-FRGYDVDEVNDFLDQIIKDFEFLIRE----------------
+-----KQQLEQQVEELQQELEQVMDEQLSATAQHTPPPAPPQPQPPQPRYPQHAEPPAPI
+QQQPSATSLSSMEQSIHKSIRVAQEVAEEVRLNAKKEAELIVQEAEKNADRII-------
+---------------NEALQKARDVHTELMDLKQ-----------KATVYRARFRTLVQS
+HLDILDNTDWESLEELE-EGL---EEAGKQ-------LDQYAE------DRN--------
+--------DNMI--LQQPGDDYRQ-----TQDYSQDSFVSHSPLEDTNP-----------
+------PYDQRAYMGE---------------------EEEPHR-----------------
+-------DLRRTS------------RKMKRKAM-----------------------F
+>REF|divIVA|A0A347WLK9 Cell division protein DivIVA [Suicoccus acidiformans]
+M-TLTPNDIVTKEFNTK-FRGYDQEEVNDFLDRVVARMEELITQ----------------
+-----NERLSQDLQIATEKNEY--------------------------------------
+--------FAQLQESLNSSILVAQEAAERLKQNARKEAELILYEAEQEADRLI-------
+---------------GEASDNARTIVIESDNLRR-----------RSKDYRAQLEATIRR
+QLDVVTSEEYVALFDKELETSL-NPEDFKEAGTRAAERAQVLE------DAQADAFQSAK
+DMVDP---TNQGVPQPQIEPEVDLDQTQ-VFQYNVDSDTLTQPKADTQPDLTYQP----D
+LALDSNPMDSADMTAEPADEP-----------IFTLDEDSPGES----------------
+------FDLKERS--IDVPD----ESKVQSESFLGQTIRIDLPID----------ED
+>REF|divIVA|A0A430A7Z0 Cell division protein DivIVA [Vagococcus fessus]
+M-ALSPIDIKNKTFSNK-MRGYNQDEVDDFLDQIIEDFEATLRE----------------
+-----KKETEKALKHANEKLTY--------------------------------------
+--------FNELKDALNQSIIVAQDTADKLKDSAEKESELTLNTANSTSAEILRRSNEEA
+ETTVSEAKRKANEIITNAQTRATVLAKETDELKT-----------KTKEFHRKLSLMLES
+QLEIVNAKDWDSLLLPFSAYI---GEDHQE-------VKKVLD------NEAKQTENKAP
+ETAAEAVLTEEKVEVKDNATK--------EVEVKADKVVETVKEEIKT------------
+------DSTKEEVKEE---------------------EKKEVK-----------------
+-------GSKAMQEAMNLN------RKNRKK-------------------------V
+>REF|divIVA|A0A430B9C7 Cell division protein DivIVA [Vagococcus carniphilus]
+M-AIKPIDITNKSFNSK-FKGYDKDEVDDFLDQIALDVEKLVSE----------------
+-----NREFEKKAKQAEEKLSY--------------------------------------
+--------FNELKDSLNQSIIVAQDTADKLKENATKESDLAIQQAQAQSEDILAHANKMS
+EELITGSTNKANEILMEASERARSLAVETDDLKK-----------KTRVFHRNLSVLLES
+QLQIVKSEEWDELLKPFGAYV---DSSHQA-------FKQVLD------AVEAANGSDP-
+--------TSVAIDVKPEFQY----------ESEPKPQQKPQPKAPQQP-----------
+------KQQSKPEAPKA--------------------EAQPTQ-----------------
+-------EPNKKGGRPE--------RASRNRV------------------------K
