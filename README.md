@@ -270,7 +270,7 @@ Development dependencies
 Clone the repository.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/GutSporePredict.git
+git clone https://github.com/isuta444/GutSporePredict.git
 
 cd GutSporePredict
 ```
@@ -1797,7 +1797,7 @@ RIKEN BioResource Research Center
 Microbe Division
 
 GitHub:
-https://github.com/<YOUR_ACCOUNT>/GutSporePredict
+https://github.com/isuta444/GutSporePredict
 
 Questions, bug reports, and feature requests are welcome through GitHub Issues.
 
