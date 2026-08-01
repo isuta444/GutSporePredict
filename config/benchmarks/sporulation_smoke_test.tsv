@@ -1,0 +1,5 @@
+accession	organism	expected_sporulation	expected_germination	expected_lifecycle	group
+GCF_000009045.1	Bacillus subtilis subsp. subtilis 168	complete	complete	complete_lifecycle	positive
+GCF_000009205.2	Clostridioides difficile 630	complete	complete	complete_lifecycle	positive
+GCF_000005845.2	Escherichia coli K-12 MG1655	absent	absent	no_sporulation_evidence	negative
+GCF_000011065.1	Bacteroides thetaiotaomicron VPI-5482	absent	absent	no_sporulation_evidence	negative

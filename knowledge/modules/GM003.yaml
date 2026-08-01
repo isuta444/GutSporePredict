@@ -1,0 +1,29 @@
+module_id: GM003
+
+name: CwlJ-SleB cortex hydrolysis system
+
+pathway_id: germination
+
+description: >
+  Germination-associated cortex hydrolysis system represented by CwlJ,
+  SleB and the SleB-associated protein YpeB.
+
+evidence_level: provisional
+
+genes:
+  - gene_id: cwlJ
+    requirement: required
+    weight: 2.0
+
+  - gene_id: ypeB
+    requirement: required
+    weight: 2.0
+
+  - gene_id: sleB
+    requirement: supporting
+    weight: 1.0
+
+literature: []
+
+taxonomic_scope:
+  - Bacillota

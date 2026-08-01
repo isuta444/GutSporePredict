@@ -1,0 +1,13 @@
+gene_id	modules	requirements
+gerAA	GM001	required
+gerAB	GM001	required
+gerAC	GM001	required
+gerD	GM001	supporting
+cspA	GM002	supporting
+cspB	GM002	required
+cspC	GM002	supporting
+sleC	GM002	required
+gerS	GM002	supporting
+cwlJ	GM003	alternative
+sleB	GM003	alternative
+ypeB	GM003	supporting

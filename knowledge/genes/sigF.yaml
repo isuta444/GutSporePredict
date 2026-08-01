@@ -1,0 +1,8 @@
+gene_id: sigF
+symbol: sigF
+full_name: RNA polymerase sigma factor SigF
+aliases:
+  - spoIIAC
+description: >
+  Early forespore-specific sigma factor activated after asymmetric
+  septation.

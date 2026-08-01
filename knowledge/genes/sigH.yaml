@@ -1,0 +1,7 @@
+gene_id: sigH
+symbol: sigH
+full_name: RNA polymerase sigma factor SigH
+aliases:
+  - spo0H
+description: >
+  Sigma factor involved in early sporulation gene expression.

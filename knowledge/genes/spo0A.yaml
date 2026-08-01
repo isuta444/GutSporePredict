@@ -1,0 +1,30 @@
+gene_id: spo0A
+
+symbol: spo0A
+
+full_name: Stage 0 sporulation protein A
+
+description: >
+  Master regulator that initiates sporulation.
+
+function:
+  - Initiates sporulation
+  - Controls early sporulation gene expression
+
+stage:
+  - initiation
+
+taxonomy:
+
+  Bacillus:
+    required: true
+
+  Clostridia:
+    required: true
+    notes: >
+      Activation mechanism differs from Bacillus.
+
+aliases: []
+
+references:
+  - PMID:6380758

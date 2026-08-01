@@ -1,0 +1,8 @@
+gene_id: sigK
+symbol: sigK
+full_name: RNA polymerase sigma factor SigK
+aliases:
+  - spoIVCB
+description: >
+  Late mother-cell-specific sigma factor controlling terminal spore
+  maturation, coat assembly and other late sporulation functions.

@@ -1,0 +1,27 @@
+module_id: GM002
+
+name: SleC-type cortex hydrolysis evidence
+
+pathway_id: germination
+
+description: >
+  Evidence for an SleC-type germination-associated cortex hydrolysis
+  pathway. Csp-family profiles are temporarily excluded from module
+  scoring because the current reference profiles cross-detect
+  unrelated bacterial cold-shock proteins.
+
+evidence_level: provisional
+
+genes:
+  - gene_id: sleC
+    requirement: required
+    weight: 2.0
+
+  - gene_id: gerS
+    requirement: supporting
+    weight: 1.0
+
+literature: []
+
+taxonomic_scope:
+  - Bacillota

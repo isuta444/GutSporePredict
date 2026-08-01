@@ -1,0 +1,34 @@
+module_id: SP009
+
+name: Late mother-cell maturation
+
+pathway_id: sporulation
+
+description: >
+  Late mother-cell transcriptional program controlling terminal spore
+  coat assembly and maturation, centered on the sporulation sigma
+  factor SigK.
+
+evidence_level: curated
+
+genes:
+  - gene_id: sigK
+    requirement: required
+    weight: 2.0
+
+  - gene_id: gerE
+    requirement: supporting
+    weight: 1.0
+
+  - gene_id: spoIVFB
+    requirement: supporting
+    weight: 1.0
+
+literature:
+  - PMID:23950727
+  - PMID:7860587
+  - PMID:1518043
+  - PMID:10075739
+
+taxonomic_scope:
+  - Bacillota

@@ -1,0 +1,16 @@
+rule_id: R0001
+
+module_id: sporulation_initiation
+
+condition: spo0A absent
+
+outcome: module_absent
+
+evidence_level: experimental
+
+literature:
+  - PMID:6380758
+
+notes: |
+  Spo0A is the master regulator of sporulation.
+  Without Spo0A activation, sporulation initiation does not occur.

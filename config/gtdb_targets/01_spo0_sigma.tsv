@@ -1,0 +1,17 @@
+gene_id	category	target_class	function	taxonomic_interpretation
+spo0A	initiation	core	Sporulation master response regulator	Broadly conserved central sporulation regulator
+sigH	initiation	core_leaning	Transition-state and early sporulation sigma factor	Important but assess sequence divergence and annotation quality
+sigF	sigma_factor	core	Early forespore-specific sigma factor	Central sporulation sigma factor
+sigE	sigma_factor	core	Early mother-cell-specific sigma factor	Central sporulation sigma factor
+sigG	sigma_factor	core	Late forespore-specific sigma factor	Central sporulation sigma factor
+sigK	sigma_factor	core	Late mother-cell-specific sigma factor	Central sporulation sigma factor
+spoIIAA	sigma_regulation	core_leaning	Anti-anti-sigma factor for SigF activation	Expected in canonical sporulation systems
+spoIIAB	sigma_regulation	core_leaning	Anti-sigma factor regulating SigF	Expected in canonical sporulation systems
+spoIIE	sigma_regulation	core_leaning	Phosphatase and septation protein controlling SigF activation	Important early compartmentalization marker
+spoIIGA	sigma_regulation	core_leaning	Protease involved in pro-SigE activation	Mechanistic details may vary among lineages
+spoIIR	intercellular_signaling	core_leaning	Forespore signal involved in SigE activation	Sequence and mechanism may vary among Clostridia
+spoIIID	transcriptional_regulation	supporting	Mother-cell transcription factor downstream of SigE	Useful supporting marker
+spoVT	transcriptional_regulation	supporting	Late forespore transcription factor associated with SigG regulon	Useful supporting marker
+spo0F	initiation_phosphorelay	lineage_specific	Intermediate response regulator of Bacillus-type phosphorelay	Do not interpret absence as loss of sporulation
+spo0B	initiation_phosphorelay	lineage_specific	Phosphotransferase of Bacillus-type phosphorelay	Do not interpret absence as loss of sporulation
+kinA	initiation_kinase	lineage_specific	Sporulation-associated histidine kinase	Bacillus-type name; not a universal orthologous marker

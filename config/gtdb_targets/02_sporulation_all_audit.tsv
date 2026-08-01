@@ -1,0 +1,53 @@
+module_id	module_name	gene_id	requirement	weight	hmm_available	hmm_path
+SP001	Sporulation initiation	spo0A	required	1.0	yes	database/gutspore/reference_v3/hmm/spo0A.hmm
+SP001	Sporulation initiation	sigH	supporting	1.0	yes	database/gutspore/reference_v3/hmm/sigH.hmm
+SP001	Sporulation initiation	spo0F	optional	1.0	no	database/gutspore/reference_v3/hmm/spo0F.hmm
+SP001	Sporulation initiation	spo0B	optional	1.0	no	database/gutspore/reference_v3/hmm/spo0B.hmm
+SP001	Sporulation initiation	kinA	optional	1.0	no	database/gutspore/reference_v3/hmm/kinA.hmm
+SP001	Sporulation initiation	kinB	optional	1.0	no	database/gutspore/reference_v3/hmm/kinB.hmm
+SP001	Sporulation initiation	kinC	optional	1.0	no	database/gutspore/reference_v3/hmm/kinC.hmm
+SP002	Asymmetric septation and SigF activation	spoIIE	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIIE.hmm
+SP002	Asymmetric septation and SigF activation	sigF	required	2.0	yes	database/gutspore/reference_v3/hmm/sigF.hmm
+SP002	Asymmetric septation and SigF activation	spoIIAA	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIIAA.hmm
+SP002	Asymmetric septation and SigF activation	spoIIAB	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIIAB.hmm
+SP003	Forespore signaling and early engulfment	spoIIR	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIIR.hmm
+SP003	Forespore signaling and early engulfment	spoIID	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIID.hmm
+SP003	Forespore signaling and early engulfment	spoIIP	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIIP.hmm
+SP003	Forespore signaling and early engulfment	spoIIQ	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIIQ.hmm
+SP004	Engulfment machinery	spoIID	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIID.hmm
+SP004	Engulfment machinery	spoIIM	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIIM.hmm
+SP004	Engulfment machinery	spoIIP	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIIP.hmm
+SP004	Engulfment machinery	spoIIQ	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIIQ.hmm
+SP004	Engulfment machinery	spoIIIAH	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIIIAH.hmm
+SP004	Engulfment machinery	spoIIIAA	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAA.hmm
+SP004	Engulfment machinery	spoIIIAB	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAB.hmm
+SP004	Engulfment machinery	spoIIIAC	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAC.hmm
+SP004	Engulfment machinery	spoIIIAD	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAD.hmm
+SP004	Engulfment machinery	spoIIIAE	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAE.hmm
+SP004	Engulfment machinery	spoIIIAF	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAF.hmm
+SP004	Engulfment machinery	spoIIIAG	optional	0.5	yes	database/gutspore/reference_v3/hmm/spoIIIAG.hmm
+SP005	Mother-cell SigE activation	sigE	required	2.0	yes	database/gutspore/reference_v3/hmm/sigE.hmm
+SP005	Mother-cell SigE activation	spoIIGA	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIIGA.hmm
+SP005	Mother-cell SigE activation	spoIIR	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIIR.hmm
+SP006	Cortex formation	spoVD	required	2.0	yes	database/gutspore/reference_v3/hmm/spoVD.hmm
+SP006	Cortex formation	spoVE	required	2.0	yes	database/gutspore/reference_v3/hmm/spoVE.hmm
+SP006	Cortex formation	spoVB	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoVB.hmm
+SP006	Cortex formation	cwlD	supporting	1.0	yes	database/gutspore/reference_v3/hmm/cwlD.hmm
+SP006	Cortex formation	pdaA	supporting	1.0	no	database/gutspore/reference_v3/hmm/pdaA.hmm
+SP007	Spore coat and crust formation	spoIVA	required	2.0	yes	database/gutspore/reference_v3/hmm/spoIVA.hmm
+SP007	Spore coat and crust formation	spoVM	supporting	1.0	no	database/gutspore/reference_v3/hmm/spoVM.hmm
+SP007	Spore coat and crust formation	spoVID	supporting	1.0	no	database/gutspore/reference_v3/hmm/spoVID.hmm
+SP007	Spore coat and crust formation	safA	supporting	1.0	no	database/gutspore/reference_v3/hmm/safA.hmm
+SP007	Spore coat and crust formation	cotE	optional	0.5	no	database/gutspore/reference_v3/hmm/cotE.hmm
+SP007	Spore coat and crust formation	cotX	optional	0.5	no	database/gutspore/reference_v3/hmm/cotX.hmm
+SP007	Spore coat and crust formation	cotY	optional	0.5	no	database/gutspore/reference_v3/hmm/cotY.hmm
+SP007	Spore coat and crust formation	cotZ	optional	0.5	no	database/gutspore/reference_v3/hmm/cotZ.hmm
+SP008	Spore core maturation	sigG	required	2.0	yes	database/gutspore/reference_v3/hmm/sigG.hmm
+SP008	Spore core maturation	spoVAC	required	2.0	yes	database/gutspore/reference_v3/hmm/spoVAC.hmm
+SP008	Spore core maturation	spoVAD	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoVAD.hmm
+SP008	Spore core maturation	spoVAE	supporting	1.0	no	database/gutspore/reference_v3/hmm/spoVAE.hmm
+SP008	Spore core maturation	sspA	supporting	1.0	yes	database/gutspore/reference_v3/hmm/sspA.hmm
+SP008	Spore core maturation	sspB	supporting	1.0	yes	database/gutspore/reference_v3/hmm/sspB.hmm
+SP009	Late mother-cell maturation	sigK	required	2.0	yes	database/gutspore/reference_v3/hmm/sigK.hmm
+SP009	Late mother-cell maturation	gerE	supporting	1.0	no	database/gutspore/reference_v3/hmm/gerE.hmm
+SP009	Late mother-cell maturation	spoIVFB	supporting	1.0	yes	database/gutspore/reference_v3/hmm/spoIVFB.hmm
