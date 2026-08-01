@@ -9,6 +9,8 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+from gutsporepredict.resources import resource_root
+
 
 class PipelineError(RuntimeError):
     """Raised when the end-to-end pipeline cannot complete."""
@@ -37,6 +39,16 @@ class PipelineRunner:
 
     def __init__(self, config: PipelineConfig) -> None:
         self.config = config
+
+        configured_root = config.project_root.resolve()
+        packaged_root = resource_root()
+
+        if (
+            configured_root / "scripts" / "06_run_hmmsearch.py"
+        ).is_file():
+            self.project_root = configured_root
+        else:
+            self.project_root = packaged_root
 
         self.protein_dir = config.output_dir / "01_proteins"
         self.prodigal_log_dir = config.output_dir / "logs" / "prodigal"
@@ -150,7 +162,7 @@ class PipelineRunner:
         return self.lifecycle_file
 
     def _root(self, relative_path: str) -> Path:
-        return self.config.project_root / relative_path
+        return self.project_root / relative_path
 
     def _validate_configuration(self) -> None:
         genome_dir = self.config.genome_dir
@@ -408,7 +420,7 @@ class PipelineRunner:
             text=True,
             capture_output=True,
             check=False,
-            cwd=self.config.project_root,
+            cwd=self.project_root,
         )
 
         if completed.stdout:

@@ -1,0 +1,7 @@
+gene_id: cwlD
+symbol: cwlD
+full_name: Sporulation-specific N-acetylmuramoyl-L-alanine amidase CwlD
+aliases: []
+description: >
+  Sporulation-specific amidase that removes peptide side chains from
+  cortex peptidoglycan precursors during muramic-delta-lactam formation.

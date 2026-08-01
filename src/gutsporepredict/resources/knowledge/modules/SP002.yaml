@@ -1,0 +1,35 @@
+module_id: SP002
+
+name: Asymmetric septation and SigF activation
+
+pathway_id: sporulation
+
+description: >
+  Formation of the asymmetric sporulation septum and activation of the
+  early forespore sigma factor SigF.
+
+evidence_level: curated
+
+genes:
+  - gene_id: spoIIE
+    requirement: required
+    weight: 2.0
+
+  - gene_id: sigF
+    requirement: required
+    weight: 2.0
+
+  - gene_id: spoIIAA
+    requirement: supporting
+    weight: 1.0
+
+  - gene_id: spoIIAB
+    requirement: supporting
+    weight: 1.0
+
+literature:
+  - PMID:9570406
+  - PMID:10400597
+
+taxonomic_scope:
+  - Bacillota

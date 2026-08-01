@@ -1,0 +1,7 @@
+gene_id: pdaA
+symbol: pdaA
+full_name: Peptidoglycan N-acetylmuramic acid deacetylase PdaA
+aliases: []
+description: >
+  Peptidoglycan deacetylase involved with CwlD in formation of
+  muramic-delta-lactam within the spore cortex.

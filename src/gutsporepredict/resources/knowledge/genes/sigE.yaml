@@ -1,0 +1,9 @@
+gene_id: sigE
+symbol: sigE
+full_name: RNA polymerase sigma factor SigE
+aliases:
+  - spoIIGB
+description: >
+  Early mother-cell-specific sigma factor synthesized as an inactive
+  precursor and activated after asymmetric septation to control genes
+  involved in engulfment and subsequent mother-cell development.

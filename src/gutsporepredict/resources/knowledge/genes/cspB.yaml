@@ -1,0 +1,10 @@
+gene_id: cspB
+
+symbol: cspB
+
+full_name: Germination protease CspB
+
+description: >
+  Protease that activates the cortex lytic enzyme SleC.
+
+aliases: []

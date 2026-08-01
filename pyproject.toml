@@ -38,7 +38,9 @@ dev = [
     "pytest>=8",
     "pytest-cov>=5",
     "ruff>=0.5",
-    "mypy>=1.10"
+    "mypy>=1.10",
+    "types-PyYAML>=6.0",
+    "build>=1.2",
 ]
 
 [project.scripts]
@@ -46,6 +48,7 @@ gutsporepredict = "gutsporepredict.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -60,7 +63,7 @@ addopts = [
 
 [tool.ruff]
 line-length = 88
-target-version = "py310"
+target-version = "py312"
 
 [tool.ruff.lint]
 select = [
@@ -71,6 +74,11 @@ select = [
     "B",
     "UP"
 ]
+ignore = [
+    "UP040",
+    "UP042",
+    "UP047",
+]
 
 [tool.mypy]
 python_version = "3.12"
@@ -78,3 +86,13 @@ strict = true
 warn_unused_configs = true
 packages = ["gutsporepredict"]
 mypy_path = "src"
+exclude = "^src/gutsporepredict/resources/scripts/"
+
+[tool.setuptools.package-data]
+gutsporepredict = [
+    "resources/**/*.py",
+    "resources/**/*.tsv",
+    "resources/**/*.yaml",
+    "resources/**/*.hmm",
+    "resources/**/*.faa",
+]

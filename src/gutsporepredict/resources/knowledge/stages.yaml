@@ -1,0 +1,60 @@
+stages:
+  - stage_id: ST001
+    name: Sporulation initiation
+    description: Entry into the sporulation developmental programme.
+    module_ids:
+      - SP001
+
+  - stage_id: ST002
+    name: Asymmetric division
+    description: Polar septation and activation of the early forespore programme.
+    module_ids:
+      - SP002
+
+  - stage_id: ST003
+    name: Forespore signaling and engulfment
+    description: Intercellular signaling and engulfment of the forespore.
+    module_ids:
+      - SP003
+      - SP004
+
+  - stage_id: ST004
+    name: Early mother-cell programme
+    description: Activation of the early mother-cell transcriptional programme.
+    module_ids:
+      - SP005
+
+  - stage_id: ST005
+    name: Cortex formation
+    description: Assembly and maturation of the spore cortex.
+    module_ids:
+      - SP006
+
+  - stage_id: ST006
+    name: Coat formation
+    description: Assembly of the spore coat and outer protective layers.
+    module_ids:
+      - SP007
+
+  - stage_id: ST007
+    name: Spore core maturation
+    description: Core dehydration, DNA protection and acquisition of resistance.
+    module_ids:
+      - SP008
+
+  - stage_id: ST008
+    name: Late mother-cell maturation
+    description: Late mother-cell processes required for mature spore formation.
+    module_ids:
+      - SP009
+
+  - stage_id: ST009
+    name: Germination competence
+    description: >
+      Predicted capacity to exit dormancy through at least one
+      recognizable germination and cortex-hydrolysis pathway.
+    aggregation: any
+    module_ids:
+      - GM001
+      - GM002
+      - GM003

@@ -1,0 +1,8 @@
+gene_id: gerE
+symbol: gerE
+full_name: Sporulation transcription factor GerE
+aliases: []
+description: >
+  Late mother-cell transcription factor that works downstream of SigK
+  to activate or repress genes involved in spore coat maturation and
+  formation of a germination-competent spore.

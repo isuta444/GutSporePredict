@@ -1,0 +1,33 @@
+module_id: GM001
+
+name: Ger-type germinant receptor system
+
+pathway_id: germination
+
+description: >
+  Nutrient-responsive germination system represented by Ger-family
+  receptor subunits and the accessory protein GerD.
+
+evidence_level: provisional
+
+genes:
+  - gene_id: gerAA
+    requirement: required
+    weight: 2.0
+
+  - gene_id: gerAC
+    requirement: required
+    weight: 2.0
+
+  - gene_id: gerAB
+    requirement: supporting
+    weight: 1.0
+
+  - gene_id: gerD
+    requirement: optional
+    weight: 0.5
+
+literature: []
+
+taxonomic_scope:
+  - Bacillota
