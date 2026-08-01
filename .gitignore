@@ -29,8 +29,18 @@ logs/*
 *.log
 
 # Large biological data
+# Large downloaded databases are ignored by default.
 database/*
 !database/.gitkeep
+
+# Required GutSporePredict reference resources.
+!database/gutspore/
+database/gutspore/*
+!database/gutspore/reference_v3/
+database/gutspore/reference_v3/*
+!database/gutspore/reference_v3/spore_reference.faa
+!database/gutspore/reference_v3/hmm/
+!database/gutspore/reference_v3/hmm/**
 
 input/*
 !input/.gitkeep
@@ -51,8 +61,18 @@ temp/
 **/package/
 **/ncbi_dataset/
 *.zip
+# Large downloaded databases are ignored by default.
 database/*
 !database/.gitkeep
+
+# Required GutSporePredict reference resources.
+!database/gutspore/
+database/gutspore/*
+!database/gutspore/reference_v3/
+database/gutspore/reference_v3/*
+!database/gutspore/reference_v3/spore_reference.faa
+!database/gutspore/reference_v3/hmm/
+!database/gutspore/reference_v3/hmm/**
 
 # GutSporePredict reference database (required)
 !database/gutspore/
