@@ -7,12 +7,16 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from gutsporepredict import __version__
-from gutsporepredict.io import GenomeLoader
-from gutsporepredict.validation import InputValidator
+from gutsporepredict.pipeline import (
+    PipelineConfig,
+    PipelineError,
+    PipelineRunner,
+)
 
 
 def build_parser() -> argparse.ArgumentParser:
     """Create the top-level command-line parser."""
+
     parser = argparse.ArgumentParser(
         prog="gutsporepredict",
         description=(
@@ -39,7 +43,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     run_parser = subparsers.add_parser(
         "run",
-        help="Load genome FASTA files and start the analysis pipeline.",
+        help=(
+            "Run protein prediction, HMM searches and lifecycle "
+            "classification."
+        ),
     )
 
     run_parser.add_argument(
@@ -48,39 +55,74 @@ def build_parser() -> argparse.ArgumentParser:
         required=True,
         help="Directory containing genome FASTA files.",
     )
+    run_parser.add_argument(
+        "--output",
+        type=Path,
+        required=True,
+        help="Output directory for the complete analysis.",
+    )
+    run_parser.add_argument(
+        "--project-root",
+        type=Path,
+        default=Path.cwd(),
+        help=(
+            "GutSporePredict repository root containing scripts, "
+            "knowledge, config and database directories. "
+            "Default: current directory."
+        ),
+    )
+    run_parser.add_argument(
+        "--threads",
+        type=int,
+        default=1,
+        help="CPU threads used by each HMMER search. Default: 1.",
+    )
+    run_parser.add_argument(
+        "--minimum-assessment",
+        type=float,
+        default=0.5,
+        help=(
+            "Minimum assessed fraction required for a definitive "
+            "lifecycle call. Default: 0.5."
+        ),
+    )
 
     return parser
 
 
 def run_doctor() -> int:
     """Run a minimal environment check."""
+
     print("GutSporePredict environment")
     print(f"Version: {__version__}")
     print("Status: package installation successful")
     return 0
 
 
-def run_pipeline(genome_dir: Path) -> int:
-    """Load genomes and run the initial pipeline step."""
-    print(f"Loading genomes from: {genome_dir}")
+def run_analysis(
+    genome_dir: Path,
+    output_dir: Path,
+    project_root: Path,
+    threads: int,
+    minimum_assessment: float,
+) -> int:
+    """Run the complete GutSporePredict pipeline."""
 
-    InputValidator.validate_genome_directory(genome_dir)
-    InputValidator.validate_fasta_files(genome_dir)
+    config = PipelineConfig(
+        genome_dir=genome_dir.resolve(),
+        output_dir=output_dir.resolve(),
+        project_root=project_root.resolve(),
+        threads=threads,
+        minimum_assessment=minimum_assessment,
+    )
 
-    loader = GenomeLoader(genome_dir)
-    genomes = loader.load()
-
-    print(f"Loaded {len(genomes)} genome(s)")
-
-    for genome in genomes:
-        print(f"- {genome.accession}")
-
-    print("Done.")
+    PipelineRunner(config).run()
     return 0
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     """Run the GutSporePredict command-line interface."""
+
     parser = build_parser()
     args = parser.parse_args(argv)
 
@@ -89,9 +131,20 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     if args.command == "run":
         try:
-            return run_pipeline(args.genomes)
-        except (FileNotFoundError, NotADirectoryError) as e:
-            print(f"ERROR: {e}")
+            return run_analysis(
+                genome_dir=args.genomes,
+                output_dir=args.output,
+                project_root=args.project_root,
+                threads=args.threads,
+                minimum_assessment=args.minimum_assessment,
+            )
+        except (
+            FileNotFoundError,
+            NotADirectoryError,
+            PipelineError,
+            ValueError,
+        ) as error:
+            print(f"ERROR: {error}")
             return 1
 
     parser.print_help()

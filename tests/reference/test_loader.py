@@ -39,11 +39,11 @@ def test_resolve_canonical_name_and_alias() -> None:
     )
 
     assert database.resolve_name("spoIIAC") is not None
-    assert database.resolve_name("sigF") is not None
-    assert (
-        database.resolve_name("sigF").gene_id
-        == "GSP0004"
-    )
+
+    sigf_gene = database.resolve_name("sigF")
+
+    assert sigf_gene is not None
+    assert sigf_gene.gene_id == "GSP0004"
     assert database.resolve_name("unknown") is None
 
 

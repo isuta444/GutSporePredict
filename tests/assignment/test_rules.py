@@ -3,6 +3,7 @@
 from gutsporepredict.assignment.models import AssignmentConfidence
 from gutsporepredict.assignment.rules import AssignmentRuleSet
 from gutsporepredict.reference.loader import ReferenceLoader
+from gutsporepredict.reference.models import ReferenceGene
 from gutsporepredict.search.models import SearchHit
 
 
@@ -28,7 +29,7 @@ def make_hit(
     )
 
 
-def reference_gene():
+def reference_gene() -> ReferenceGene:
     database = ReferenceLoader().load(
         "database/reference/genes.tsv",
         "database/reference/aliases.tsv",

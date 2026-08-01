@@ -41,6 +41,9 @@ def test_search_result_summary() -> None:
 
     assert result.hit_count == 2
     assert result.query_count == 1
-    assert result.best_hit("query_1") is not None
-    assert result.best_hit("query_1").target_id == "target_B"
+
+    best_hit = result.best_hit("query_1")
+
+    assert best_hit is not None
+    assert best_hit.target_id == "target_B"
     assert result.best_hit("missing") is None

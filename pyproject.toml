@@ -7,7 +7,7 @@ name = "gutsporepredict"
 version = "4.0.0a1"
 description = "Comparative genomics and evolutionary analysis of sporulation and germination potential in gut-associated bacteria."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [
     { name = "Atsushi Hisatomi" }
@@ -26,9 +26,9 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering :: Bio-Informatics"
 ]
 dependencies = []
@@ -73,7 +73,7 @@ select = [
 ]
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.12"
 strict = true
 warn_unused_configs = true
 packages = ["gutsporepredict"]
