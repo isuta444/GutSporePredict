@@ -14,7 +14,7 @@ def test_doctor_command(
 
     assert exit_code == 0
     assert "GutSporePredict environment" in captured.out
-    assert "4.0.0a1" in captured.out
+    assert "4.0.0b1" in captured.out
 
 
 def test_no_command_displays_help(

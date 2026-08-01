@@ -1,0 +1,15 @@
+name: gutsporepredict
+
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+
+dependencies:
+  - python=3.12
+  - pip
+  - setuptools>=68
+  - wheel
+  - pyyaml>=6.0
+  - hmmer=3.4
+  - prodigal=2.6.3

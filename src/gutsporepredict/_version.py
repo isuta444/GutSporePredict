@@ -1,3 +1,3 @@
 """GutSporePredict version information."""
 
-__version__ = "4.0.0a1"
+__version__ = "4.0.0b1"
