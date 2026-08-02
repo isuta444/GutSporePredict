@@ -1,14 +1,13 @@
 module_id: GM002
 
-name: SleC-type cortex hydrolysis evidence
+name: Csp-SleC germination system
 
 pathway_id: germination
 
 description: >
-  Evidence for an SleC-type germination-associated cortex hydrolysis
-  pathway. Csp-family profiles are temporarily excluded from module
-  scoring because the current reference profiles cross-detect
-  unrelated bacterial cold-shock proteins.
+  SleC-dependent cortex hydrolysis pathway associated with Csp-family
+  regulatory proteins and GerS. Csp-family profiles remain provisional
+  because they may cross-detect unrelated bacterial proteins.
 
 evidence_level: provisional
 
@@ -20,6 +19,18 @@ genes:
   - gene_id: gerS
     requirement: supporting
     weight: 1.0
+
+  - gene_id: cspA
+    requirement: optional
+    weight: 0.5
+
+  - gene_id: cspB
+    requirement: optional
+    weight: 0.5
+
+  - gene_id: cspC
+    requirement: optional
+    weight: 0.5
 
 literature: []
 

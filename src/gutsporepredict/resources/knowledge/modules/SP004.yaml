@@ -1,48 +1,35 @@
 module_id: SP004
 
-name: Engulfment machinery
+name: SpoIIQ-SpoIIIA intercellular complex
 
 pathway_id: sporulation
 
 description: >
-  Remodeling of septal peptidoglycan, migration of the mother-cell
-  membrane around the forespore, and establishment of the SpoIIQ-SpoIIIA
-  intercellular complex.
+  Formation of the SpoIIQ-SpoIIIA intercellular complex connecting
+  the mother cell and forespore during engulfment and development.
 
 evidence_level: curated
 
 genes:
-  - gene_id: spoIID
-    requirement: required
-    weight: 2.0
-
-  - gene_id: spoIIM
-    requirement: required
-    weight: 2.0
-
-  - gene_id: spoIIP
-    requirement: required
-    weight: 2.0
-
   - gene_id: spoIIQ
-    requirement: supporting
-    weight: 1.0
+    requirement: required
+    weight: 2.0
 
   - gene_id: spoIIIAH
+    requirement: required
+    weight: 2.0
+
+  - gene_id: spoIIIAA
     requirement: supporting
     weight: 1.0
 
-  - gene_id: spoIIIAA
-    requirement: optional
-    weight: 0.5
-
   - gene_id: spoIIIAB
-    requirement: optional
-    weight: 0.5
+    requirement: supporting
+    weight: 1.0
 
   - gene_id: spoIIIAC
-    requirement: optional
-    weight: 0.5
+    requirement: supporting
+    weight: 1.0
 
   - gene_id: spoIIIAD
     requirement: optional
@@ -60,9 +47,7 @@ genes:
     requirement: optional
     weight: 0.5
 
-literature:
-  - PMID:20382772
-  - PMID:22383896
+literature: []
 
 taxonomic_scope:
   - Bacillota

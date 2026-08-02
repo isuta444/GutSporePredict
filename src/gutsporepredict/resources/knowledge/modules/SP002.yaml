@@ -5,8 +5,8 @@ name: Asymmetric septation and SigF activation
 pathway_id: sporulation
 
 description: >
-  Formation of the asymmetric sporulation septum and activation of the
-  early forespore sigma factor SigF.
+  Formation of the asymmetric sporulation septum and activation of
+  the early forespore sigma factor SigF.
 
 evidence_level: curated
 
@@ -27,9 +27,7 @@ genes:
     requirement: supporting
     weight: 1.0
 
-literature:
-  - PMID:9570406
-  - PMID:10400597
+literature: []
 
 taxonomic_scope:
   - Bacillota

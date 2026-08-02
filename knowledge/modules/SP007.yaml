@@ -1,55 +1,21 @@
 module_id: SP007
 
-name: Spore coat and crust formation
+name: Spore coat assembly
 
 pathway_id: sporulation
 
 description: >
-  Assembly of the proteinaceous spore coat around the forespore,
-  including formation of the basement layer, inner and outer coat,
-  and lineage-specific outermost crust structures.
+  Assembly of the foundational spore coat structure represented by
+  the morphogenetic coat protein SpoIVA.
 
-evidence_level: curated
+evidence_level: provisional
 
 genes:
   - gene_id: spoIVA
     requirement: required
     weight: 2.0
 
-  - gene_id: spoVM
-    requirement: supporting
-    weight: 1.0
-
-  - gene_id: spoVID
-    requirement: supporting
-    weight: 1.0
-
-  - gene_id: safA
-    requirement: supporting
-    weight: 1.0
-
-  - gene_id: cotE
-    requirement: optional
-    weight: 0.5
-
-  - gene_id: cotX
-    requirement: optional
-    weight: 0.5
-
-  - gene_id: cotY
-    requirement: optional
-    weight: 0.5
-
-  - gene_id: cotZ
-    requirement: optional
-    weight: 0.5
-
-literature:
-  - PMID:10762277
-  - PMID:11395447
-  - PMID:19251857
-  - PMID:21784970
-  - PMID:30709948
+literature: []
 
 taxonomic_scope:
   - Bacillota

@@ -1,13 +1,12 @@
 module_id: SP005
 
-name: Mother-cell SigE activation
+name: Early mother-cell programme
 
 pathway_id: sporulation
 
 description: >
-  Activation of the early mother-cell sigma factor SigE through
-  SpoIIGA-dependent processing of pro-SigE following signaling from
-  the forespore.
+  Activation of the early mother-cell transcriptional programme
+  through SpoIIGA-dependent processing of pro-SigE.
 
 evidence_level: curated
 
@@ -20,13 +19,7 @@ genes:
     requirement: required
     weight: 2.0
 
-  - gene_id: spoIIR
-    requirement: supporting
-    weight: 1.0
-
-literature:
-  - PMID:10400597
-  - PMID:15612922
+literature: []
 
 taxonomic_scope:
   - Bacillota

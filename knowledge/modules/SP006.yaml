@@ -5,7 +5,7 @@ name: Cortex formation
 pathway_id: sporulation
 
 description: >
-  Synthesis and sporulation-specific modification of the thick
+  Synthesis and sporulation-specific modification of the
   peptidoglycan cortex surrounding the developing forespore.
 
 evidence_level: curated
@@ -27,15 +27,7 @@ genes:
     requirement: supporting
     weight: 1.0
 
-  - gene_id: pdaA
-    requirement: supporting
-    weight: 1.0
-
-literature:
-  - PMID:17714441
-  - PMID:19648239
-  - PMID:14679227
-  - PMID:30266804
+literature: []
 
 taxonomic_scope:
   - Bacillota

@@ -1,17 +1,16 @@
 module_id: SP003
 
-name: Forespore signaling and early engulfment
+name: Forespore signaling and engulfment initiation
 
 pathway_id: sporulation
 
 description: >
-  Communication between the forespore and mother cell after SigF
-  activation, including initiation of engulfment.
+  Forespore-to-mother-cell signaling and peptidoglycan remodeling
+  required to initiate forespore engulfment.
 
 evidence_level: curated
 
 genes:
-
   - gene_id: spoIIR
     requirement: required
     weight: 2.0
@@ -24,12 +23,11 @@ genes:
     requirement: required
     weight: 2.0
 
-  - gene_id: spoIIQ
+  - gene_id: spoIIM
     requirement: supporting
     weight: 1.0
 
-literature:
-  - PMID:8953710
+literature: []
 
 taxonomic_scope:
   - Bacillota

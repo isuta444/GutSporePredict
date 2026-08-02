@@ -5,8 +5,8 @@ name: CwlJ-SleB cortex hydrolysis system
 pathway_id: germination
 
 description: >
-  Germination-associated cortex hydrolysis system represented by CwlJ,
-  SleB and the SleB-associated protein YpeB.
+  Germination-associated cortex hydrolysis system represented by
+  CwlJ, SleB and the SleB-associated protein YpeB.
 
 evidence_level: provisional
 

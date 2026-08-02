@@ -5,8 +5,8 @@ name: Spore core maturation
 pathway_id: sporulation
 
 description: >
-  Late forespore maturation including acquisition of dormancy,
-  DNA protection and accumulation of Ca-DPA.
+  Late forespore maturation, including SigG-dependent transcription,
+  dipicolinic acid transport and small acid-soluble spore proteins.
 
 evidence_level: curated
 
@@ -23,10 +23,6 @@ genes:
     requirement: supporting
     weight: 1.0
 
-  - gene_id: spoVAE
-    requirement: supporting
-    weight: 1.0
-
   - gene_id: sspA
     requirement: supporting
     weight: 1.0
@@ -35,9 +31,7 @@ genes:
     requirement: supporting
     weight: 1.0
 
-literature:
-  - PMID:23175787
-  - PMID:30049733
+literature: []
 
 taxonomic_scope:
   - Bacillota

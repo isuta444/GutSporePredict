@@ -5,34 +5,21 @@ name: Sporulation initiation
 pathway_id: sporulation
 
 description: >
-  Commitment to sporulation through Spo0A activation.
+  Entry into the sporulation programme through Spo0A activation and
+  early sporulation-associated transcription.
 
 evidence_level: curated
 
 genes:
   - gene_id: spo0A
     requirement: required
+    weight: 2.0
 
   - gene_id: sigH
     requirement: supporting
+    weight: 1.0
 
-  - gene_id: spo0F
-    requirement: optional
-
-  - gene_id: spo0B
-    requirement: optional
-
-  - gene_id: kinA
-    requirement: optional
-
-  - gene_id: kinB
-    requirement: optional
-
-  - gene_id: kinC
-    requirement: optional
-
-literature:
-  - PMID:6380758
+literature: []
 
 taxonomic_scope:
   - Bacillota

@@ -14,4 +14,4 @@ def test_load_sp001() -> None:
 
     assert "spo0A" in module.required_gene_ids
     assert "sigH" in module.supporting_gene_ids
-    assert "kinA" in module.optional_gene_ids
+    assert module.optional_gene_ids == ()
