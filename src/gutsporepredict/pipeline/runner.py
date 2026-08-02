@@ -59,6 +59,9 @@ class PipelineRunner:
         self.germination_search_dir = (
             config.output_dir / "03_hmmsearch_germination"
         )
+        self.spoiiq_clostridia_search_dir = (
+            config.output_dir / "02b_hmmsearch_spoIIQ_clostridia"
+        )
 
         self.sporulation_calls_dir = (
             config.output_dir / "04_gene_calls_sporulation"
@@ -83,10 +86,10 @@ class PipelineRunner:
         self._validate_configuration()
         self._prepare_directories()
 
-        print("[1/8] Predicting proteins with Prodigal")
+        print("[1/9] Predicting proteins with Prodigal")
         self._run_prodigal()
 
-        print("[2/8] Searching sporulation HMM profiles")
+        print("[2/9] Searching sporulation HMM profiles")
         self._run_hmmsearch(
             targets=self._root(
                 "config/gtdb_targets/02_sporulation_ready.tsv"
@@ -94,7 +97,15 @@ class PipelineRunner:
             output_dir=self.sporulation_search_dir,
         )
 
-        print("[3/8] Searching germination HMM profiles")
+        print("[3/9] Searching Clostridia SpoIIQ profile")
+        self._run_hmmsearch(
+            targets=self._root(
+                "config/gtdb_targets/04_spoIIQ_clostridia.tsv"
+            ),
+            output_dir=self.spoiiq_clostridia_search_dir,
+        )
+
+        print("[4/9] Searching germination HMM profiles")
         self._run_hmmsearch(
             targets=self._root(
                 "config/gtdb_targets/03_germination_ready.tsv"
@@ -102,10 +113,10 @@ class PipelineRunner:
             output_dir=self.germination_search_dir,
         )
 
-        print("[4/8] Building competitive three-state gene calls")
+        print("[5/9] Building lineage-aware three-state gene calls")
         self._run_tristate_calls()
 
-        print("[5/8] Combining sporulation and germination calls")
+        print("[6/9] Combining sporulation and germination calls")
         self._run_python_script(
             "scripts/12_merge_gene_call_matrices.py",
             "--input",
@@ -116,7 +127,7 @@ class PipelineRunner:
             str(self.combined_calls),
         )
 
-        print("[6/8] Evaluating biological modules")
+        print("[7/9] Evaluating biological modules")
         self._run_python_script(
             "scripts/08_build_module_matrix.py",
             "--presence-matrix",
@@ -127,7 +138,7 @@ class PipelineRunner:
             str(self.module_dir),
         )
 
-        print("[7/8] Evaluating developmental stages ST001-ST009")
+        print("[8/9] Evaluating developmental stages ST001-ST009")
         self._run_python_script(
             "scripts/11_build_stage_matrix.py",
             "--module-evaluations",
@@ -138,7 +149,7 @@ class PipelineRunner:
             str(self.stage_dir),
         )
 
-        print("[8/8] Building lifecycle summary")
+        print("[9/9] Building lifecycle summary")
         self._run_python_script(
             "scripts/13_build_lifecycle_summary.py",
             "--stage-evaluations",
@@ -198,6 +209,16 @@ class PipelineRunner:
             self._root("scripts/06_run_hmmsearch.py"),
             self._root(
                 "scripts/10_build_groupwise_tristate_matrix.py"
+            ),
+            self._root(
+                "config/gtdb_targets/04_spoIIQ_clostridia.tsv"
+            ),
+            self._root(
+                "database/gutspore/reference_v3/hmm/"
+                "spoIIQ_Clostridia.hmm"
+            ),
+            self._root(
+                "scripts/15_merge_spoIIQ_lineage_evidence.py"
             ),
             self._root("scripts/12_merge_gene_call_matrices.py"),
             self._root("scripts/08_build_module_matrix.py"),
@@ -377,6 +398,39 @@ class PipelineRunner:
             ),
             "--output-dir",
             str(self.sporulation_calls_dir),
+        )
+
+        self._run_python_script(
+            "scripts/15_merge_spoIIQ_lineage_evidence.py",
+            "--input-calls",
+            str(
+                self.sporulation_calls_dir
+                / "gene_calls.tsv"
+            ),
+            "--input-details",
+            str(
+                self.sporulation_calls_dir
+                / "gene_call_details.tsv"
+            ),
+            "--clostridia-search-dir",
+            str(self.spoiiq_clostridia_search_dir),
+            "--sporulation-search-dir",
+            str(self.sporulation_search_dir),
+            "--output-calls",
+            str(
+                self.sporulation_calls_dir
+                / "gene_calls.tsv"
+            ),
+            "--output-details",
+            str(
+                self.sporulation_calls_dir
+                / "gene_call_details.tsv"
+            ),
+            "--audit-output",
+            str(
+                self.sporulation_calls_dir
+                / "spoIIQ_lineage_evidence.tsv"
+            ),
         )
 
         self._run_python_script(
