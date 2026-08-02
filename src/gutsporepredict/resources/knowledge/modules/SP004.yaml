@@ -12,8 +12,8 @@ evidence_level: curated
 
 genes:
   - gene_id: spoIIQ
-    requirement: required
-    weight: 2.0
+    requirement: supporting
+    weight: 1.0
 
   - gene_id: spoIIIAH
     requirement: required
