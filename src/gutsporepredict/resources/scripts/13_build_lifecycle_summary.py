@@ -37,15 +37,8 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def classify_sporulation(
-    stage_rows: dict[str, dict[str, str]],
-) -> str:
-    """Classify the ST001-ST008 sporulation programme.
-
-    Sporulation requires evidence of developmental continuity.
-    Isolated matches to broadly conserved regulators, sigma factors,
-    peptidoglycan proteins or hydrolases are not sufficient.
-    """
+def classify_sporulation(stage_rows):
+    """Classify overall sporulation programme."""
 
     statuses = {
         stage_id: stage_rows[stage_id]["status"]
@@ -63,19 +56,38 @@ def classify_sporulation(
 
     positive_states = {"complete", "partial"}
 
+    # --------------------------
+    # Early commitment
+    # --------------------------
     entry_supported = (
         statuses["ST001"] in positive_states
         and statuses["ST002"] in positive_states
     )
 
-    developmental_core_supported = (
+    entry_uncertain = (
+        statuses["ST001"] == "uncertain"
+        or statuses["ST002"] == "uncertain"
+    )
+
+    # --------------------------
+    # Developmental core
+    # --------------------------
+    developmental_supported = (
         statuses["ST003"] in positive_states
         or statuses["ST004"] in positive_states
     )
 
+    developmental_uncertain = (
+        statuses["ST003"] == "uncertain"
+        or statuses["ST004"] == "uncertain"
+    )
+
+    # --------------------------
+    # Late sporulation
+    # --------------------------
     later_stage_count = sum(
-        statuses[stage_id] in positive_states
-        for stage_id in (
+        statuses[s] in positive_states
+        for s in (
             "ST005",
             "ST006",
             "ST007",
@@ -83,31 +95,41 @@ def classify_sporulation(
         )
     )
 
+    # --------------------------
+    # Classification
+    # --------------------------
+
     if not entry_supported:
+        if entry_uncertain:
+            return "uncertain"
         return "absent"
 
-    if not developmental_core_supported:
+    if not developmental_supported:
+        if developmental_uncertain:
+            return "uncertain"
         return "absent"
 
     if later_stage_count < 2:
+        if any(
+            statuses[s] == "uncertain"
+            for s in (
+                "ST005",
+                "ST006",
+                "ST007",
+                "ST008",
+            )
+        ):
+            return "uncertain"
+
         return "partial"
 
-    if all(
-        status == "complete"
-        for status in statuses.values()
-    ):
+    if all(status == "complete" for status in statuses.values()):
         return "complete"
 
-    if any(
-        status == "partial"
-        for status in statuses.values()
-    ):
+    if any(status == "partial" for status in statuses.values()):
         return "partial"
 
-    if any(
-        status == "uncertain"
-        for status in statuses.values()
-    ):
+    if any(status == "uncertain" for status in statuses.values()):
         return "uncertain"
 
     return "partial"
